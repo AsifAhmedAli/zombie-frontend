@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import RelatedParts from "./RelatedParts";
 
-const ProductContentRight = () => {
+const ProductContentRight = ({ productData }) => {
   return (
     <div className="w-full">
       {/* upper content */}
@@ -11,7 +11,7 @@ const ProductContentRight = () => {
           <span className="text-sm">
             Addtional informaion: We Can Provide further information hereLike
             Generic Partfitment, orDetailed information. <br className="mb-4" />{" "}
-            This part number has beenUpdated by Honda to:33150-T2A-A82.This is
+            This part number has beenUpdated by Honda to:{productData?.PartNumber}.This is
             the exact item and willfunction the same
             <br className="mb-4" />
             SImilar to an amazon Product Page

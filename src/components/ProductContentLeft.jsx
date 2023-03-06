@@ -4,7 +4,7 @@ import productView3 from "../assets/productDetails3.png";
 import productViewMain from "../assets/productDetailsMain.png";
 import ProductDetailsTable from "./ProductDetailsTable";
 
-const ProductContentLeft = () => {
+const ProductContentLeft = ({ productData }) => {
   return (
     <div className="w-full">
       {/* image div */}
@@ -37,7 +37,7 @@ const ProductContentLeft = () => {
       {/* product info */}
       <div className="w-full my-6">
         <p className="text-lg font-medium">
-          33150-T2A-A81 Headlight Assembly, Driver Side is Ref No. 11 in the
+          {productData?.PartNumber} Headlight Assembly, Driver Side is Ref No. 11 in the
           diagram above
         </p>
       </div>
