@@ -37,7 +37,7 @@ const ProductContentLeft = ({ productData }) => {
       {/* product info */}
       <div className="w-full my-6">
         <p className="text-lg font-medium">
-          {productData?.PartNumber} Headlight Assembly, Driver Side is Ref No. 11 in the
+          {productData?.PartNumber} {productData?.PartDescription} is Ref No. 11 in the
           diagram above
         </p>
       </div>

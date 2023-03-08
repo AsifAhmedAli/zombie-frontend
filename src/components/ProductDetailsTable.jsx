@@ -120,9 +120,9 @@ const ProductDetailsTable = () => {
         <TableContentRow leftTitle="Other Names" rightTitle="" />
         <TableContentRow
           leftTitle="Item Dimensions"
-          rightTitle={product.itemDimensions}
+          rightTitle={`${product.Height} * ${product.Length} * ${product.Width} inches`}
         />
-        <TableContentRow leftTitle="Item Weigh" rightTitle={product.Weight} />
+        <TableContentRow leftTitle="Item Weigh" rightTitle={`${product.Weight} pounds`} />
         <TableContentRow leftTitle="Position" rightTitle="Driver Side" />
         <TableContentRow leftTitle="Condition " rightTitle="New" />
         <TableContentRow
@@ -132,7 +132,7 @@ const ProductDetailsTable = () => {
         <TableContentRow leftTitle="Manutacturer" rightTitle="Honda" />
         <TableContentRow
           leftTitle="SKU"
-          rightTitle={product.PartNumberStripped}
+          rightTitle={product.PartNumber}
         />
         <div className="w-full flex border border-b-0 text-sm">
           <div className="w-4/12 p-2 bg-sectionBg">

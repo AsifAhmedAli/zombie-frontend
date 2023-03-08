@@ -20,7 +20,7 @@ const ProductContentRight = ({ productData }) => {
         {/* right */}
         <div className="w-7/12 bg-navbarColor text-white p-4">
           <h3 className="text-lg mb-4">Your Price : $179.44</h3>
-          <p className="text-sm mb-4">Dealer Price : $279.44</p>
+          <p className="text-sm mb-4">Dealer Price : {`${productData?.SuggestedRetailPriceAmount}`}</p>
           <p className="text-sm mb-4">Total Savings : $69.78 (39% OFF)</p>
           <p className="text-sm">QTY : 1</p>
 

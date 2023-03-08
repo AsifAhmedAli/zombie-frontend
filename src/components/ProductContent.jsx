@@ -52,7 +52,7 @@ const ProductContent = () => {
       <div className="w-full">
         <h2 className="text-2xl font-medium">
           
-          Honda {productData?.PartNumber} Headlight Assembly, Driver Side
+          Honda {productData?.PartNumber} {productData?.PartDescription}
         </h2>
       </div>
 
