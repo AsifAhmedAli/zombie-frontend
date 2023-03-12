@@ -122,7 +122,7 @@ const ProductDetailsTable = () => {
           leftTitle="Item Dimensions"
           rightTitle={`${product.Height} * ${product.Length} * ${product.Width} inches`}
         />
-        <TableContentRow leftTitle="Item Weigh" rightTitle={`${product.Weight} pounds`} />
+<TableContentRow leftTitle="Item Weight" rightTitle={`${parseFloat(product.Weight).toFixed()} pounds`} />
         <TableContentRow leftTitle="Position" rightTitle="Driver Side" />
         <TableContentRow leftTitle="Condition " rightTitle="New" />
         <TableContentRow
