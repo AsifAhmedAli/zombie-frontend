@@ -120,9 +120,9 @@ const ProductDetailsTable = () => {
         <TableContentRow leftTitle="Other Names" rightTitle="" />
         <TableContentRow
           leftTitle="Item Dimensions"
-          rightTitle={`${parseFloat(product.Height).toFixed()} * ${parseFloat(product.Length).toFixed()} * ${parseFloat(product.Width).toFixed()} inches`}
+          rightTitle={`${parseFloat(product.Height).toFixed(1)}H * ${parseFloat(product.Length).toFixed(1)}L * ${parseFloat(product.Width).toFixed(1)}W inches`}
         />
-<TableContentRow leftTitle="Item Weight" rightTitle={`${parseFloat(product.Weight).toFixed()} pounds`} />
+<TableContentRow leftTitle="Item Weight" rightTitle={`${parseFloat(product.Weight).toFixed(2)} Pounds`} />
         <TableContentRow leftTitle="Position" rightTitle="Driver Side" />
         <TableContentRow leftTitle="Condition " rightTitle="New" />
         <TableContentRow
